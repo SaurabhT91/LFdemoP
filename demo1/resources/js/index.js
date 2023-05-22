@@ -9,7 +9,7 @@ login.addEventListener('click', function() {
 
     var formData = new FormData(document.querySelector('form'))
 
-    fetch('http://localhost:7008/action_performed.php', {'method': 'POST', 'body' : formData, mode: 'cors', credentials : 'include'})
+    fetch('http://localhost:8000//action_performed.php', {'method': 'POST', 'body' : formData, mode: 'cors', credentials : 'include'})
     .then(res => { 
         status = res.status
         console.log('user cookies is ')
