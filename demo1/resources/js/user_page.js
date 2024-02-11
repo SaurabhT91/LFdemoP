@@ -1,6 +1,6 @@
 function deleteLeadById(id){
   var deleteID=id;
-  fetch('http://localhost:8000/action_performed.php?deleteID='+deleteID, {'method': 'DELETE'})
+  fetch('http://localhost:8000/app/Http/Controllers/action_performed.php?deleteID='+deleteID, {'method': 'DELETE'})
 .then(res => res.text())
 .then(data => {
     //alert(data)

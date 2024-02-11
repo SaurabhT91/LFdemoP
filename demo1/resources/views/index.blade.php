@@ -55,12 +55,12 @@ if(isset($_SESSION['LOGGED_IN']))
                 <input class="form-group" type="hidden" name="action_type" value="login">
             <div class="form-group">
 
-                <button type="submit" id="login" >Login</button>
-                <button type="submit" id="signup" >Sign Up</button>
+                <a href="/index.js"><button type="submit" id="login" >Login</button></a>
+                <a href="/index.js"><button type="submit" id="signup" >Sign Up</button></a>
             </div>
         </form>
     </div>
-    <script src="index.js" defer></script>
+    <script type="text/babel" src="re/js/index.js" defer></script>
 </body>
 
 </html>

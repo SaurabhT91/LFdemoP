@@ -8,7 +8,7 @@ signUp.addEventListener('click', () => {
     var status
     const formData = new FormData(document.querySelector('form'));
     console.log(formData.get('pwd'));
-    fetch('http://localhost8000/action_performed.php', {
+    fetch('http://localhost:8000/app/Http/Controllers/action_performed.php', {
             'method': "POST",
             'body': formData,
         })
